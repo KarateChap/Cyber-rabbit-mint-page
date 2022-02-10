@@ -1,0 +1,99 @@
+<header class="main-div" *ngIf="!platform.ANDROID && !platform.IOS">
+  <img src="../../assets/cyberlogonav.png" alt="" class="logo" />
+  <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">STAKING</a></li>
+      <li><a href="#">MOVEMENT</a></li>
+      <li><a href="#">METAVERSE</a></li>
+    </ul>
+  </nav>
+  <div class="connect-container">
+    <div *ngIf="address" class="wallet-address">
+        <img src="../../assets/thumbnail.png" alt="" class="wallet-image">
+        <p class="wallet-text">{{address | slice:0:10}}.....</p>
+    </div>
+    <button mat-raised-button class="connect-button" (click)="onConnect()" *ngIf="!address">
+      CONNECT WALLET
+    </button>
+  </div>
+</header>
+
+<!-- <mat-drawer-container class="example-container" hasBackdrop="true" *ngIf="platform.ANDROID || platform.IOS" >
+    <mat-drawer #drawer mode="over" class="drawer">
+
+      <span class="material-icons menu" (click)="drawer.toggle() && toggleMenu()">
+        {{menuIcon}}
+        </span>
+
+      <div class="content-div" >
+        <img src="../../assets/cyberrabbitmobile.gif" class="menu-image">
+      </div>
+
+      <div class="menu-links">
+        <p><a>HOME</a></p>
+        <p><a>STAKING</a></p>
+        <p><a>MOVEMENT</a></p>
+        <p><a>METAVERSE</a></p>
+      </div>
+
+    </mat-drawer>
+
+      <span class="material-icons menu" (click)="drawer.toggle() && toggleMenu()" (click)="opened =! opened">
+        {{menuIcon}}
+        </span>
+  </mat-drawer-container> -->
+
+<mat-sidenav-container *ngIf="platform.ANDROID || platform.IOS">
+  <mat-sidenav [(opened)]="opened">
+    <span class="material-icons menu" (click)="toggleMenu()">
+      {{ menuIcon }}
+    </span>
+
+    <div class="content-div">
+      <img src="../../assets/cyberrabbitmobile.gif" class="menu-image" />
+    </div>
+
+    <div class="menu-links">
+      <p><a>HOME</a></p>
+      <p><a>STAKING</a></p>
+      <p><a>MOVEMENT</a></p>
+      <p><a>METAVERSE</a></p>
+    </div>
+
+    <div class="mobile-menu-icons">
+      <img
+        src="../../assets/social-icons/Twitter.png"
+        class="mobile-icon-image"
+      />
+      <img
+        src="../../assets/social-icons/discord.png"
+        class="mobile-icon-image"
+      />
+      <img
+        src="../../assets/social-icons/facebook.png"
+        class="mobile-icon-image"
+      />
+      <img
+        src="../../assets/social-icons/instagram.png"
+        class="mobile-icon-image"
+      />
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <span class="material-icons menu" (click)="toggleMenu()">
+      {{ menuIcon }}
+    </span>
+    <app-body></app-body>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!--
+      <div class="mobile-menu-icons">
+        <img src="../../assets/social-icons/Twitter.png" class="mobile-icon-image">
+        <img src="../../assets/social-icons/discord.png" class="mobile-icon-image">
+        <img src="../../assets/social-icons/facebook.png" class="mobile-icon-image">
+        <img src="../../assets/social-icons/instagram.png" class="mobile-icon-image">
+      </div> -->

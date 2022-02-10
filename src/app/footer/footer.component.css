@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+.main-div {
+  background-image: url("../../assets/footerBg.jpg");
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 30vh;
+  margin-top: 7vh;
+}
+
+.mobile-menu-icons {
+  width: 8vh;
+  margin-top: -4vh;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3vh;
+}
+
+.mobile-icon-image {
+  width: 3vh;
+  border: 0.7px solid transparent;
+  border-image: linear-gradient(90deg, #b35867, #9b2338);
+  border-image-slice: 1;
+  margin: 5px;
+}
+
+.mobile-icon-image:hover {
+  background-image: linear-gradient(90deg, #b35867, #9b2338);
+}
+
+.footer-text{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4vh;
+}
+
+.footer-text-item{
+  margin: 0 8vh;
+}
+
+.main-div p {
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.2em;
+  line-height: 3em;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main-div {
+    background-image: none;
+    background-color: #17050B;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vh;
+  }
+
+  .main-div p{
+    font-size: 10px;
+  }
+
+  .footer-logo {
+    margin-top: 0vh;
+  }
+
+
+}

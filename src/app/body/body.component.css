@@ -1,0 +1,629 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@font-face {
+  font-family: "Valorant";
+  src: local("Valorant"),
+    url(../../assets/fonts//Valorant.ttf) format("truetype");
+}
+
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+@media only screen and (max-width: 600px) {
+  video {
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+}
+
+.glow{
+  text-shadow: 0px 0px 20px #fff, 0px 0px 20px #db435c;
+
+}
+
+.connect-button{
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  height: 4vh;
+  margin-top: -2.5vh;
+  margin-left: 8vh;
+}
+
+.main-div {
+  z-index: 10;
+  width: 100%;
+  height: 92vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.div-1 {
+  /* background-color: blue; */
+
+  width: 110vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-1-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  line-height: 4em;
+}
+
+.whitelist-text {
+  margin-top: -6.5vh;
+  margin-right: 10vh;
+  font-family: "Valorant";
+  font-size: 80px;
+  text-shadow: 0px 0px 25px rgb(221, 58, 58), 0px 0px 0px #c72842;
+}
+
+.sale-text {
+  font-family: "Orbitron", sans-serif;
+  font-size: 50px;
+  margin-left: 10vh;
+}
+
+.rabbit-image {
+  width: 40vh;
+}
+
+.learn-text {
+  /* margin-top: 5vh;
+  margin-left: 8vh; */
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.12em;
+}
+
+.discord-text {
+  color: #9a2237;
+  transition: ease-in-out all 0.2s;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0), 0px 0px 5px #000000;
+}
+
+.discord-text:hover {
+  cursor: pointer;
+  color: white;
+  text-shadow: 0px 0px 20px #fff, 0px 0px 20px #db435c;
+}
+
+.margin-div {
+  margin: 0 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-2 {
+  box-shadow: 0px 0px 100000px rgba(255, 30, 30, 0.37), 0px 0px 10px #d81111;
+  margin-right: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vh;
+  height: 70vh;
+  background-color: #2c2c2c;
+  border-radius: 20px;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+}
+
+.mint-text {
+  margin-top: 5vh;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  color: white;
+  text-shadow: 0px 0px 10px #fff, 0px 0px 20px #ff002b;
+
+}
+
+.count-text {
+  margin-top: 4vh;
+  font-size: 12.5px;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+
+.balance-div {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 25px;
+  letter-spacing: 0.12em;
+}
+
+.amount-div {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 25px;
+  letter-spacing: 0.12em;
+}
+
+.minus-button {
+  margin-top: -1vh;
+  min-width: 20px;
+  height: 35px;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  transition: ease-in-out all 0.2s;
+}
+
+.minus-button:hover {
+  box-shadow: 0px 0px 20px #fff, 0px 0px 20px #db435c;
+  background-color: white;
+  color: #9b2338;
+}
+
+.add-button {
+  margin-top: -1vh;
+  min-width: 20px;
+  height: 35px;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  transition: ease-in-out all 0.2s;
+}
+
+.add-button:hover {
+  box-shadow: 0px 0px 20px #fff, 0px 0px 20px #db435c;
+  background-color: white;
+  color: #9b2338;
+}
+
+.operators-div {
+  display: flex;
+  justify-content: center;
+  width: 20vh;
+  font-weight: bold;
+}
+
+.max-button {
+  margin-top: -1vh;
+  background-color: rgb(78, 78, 78);
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.12em;
+  font-weight: bold;
+  transition: ease-in-out all 0.2s;
+}
+
+.max-button:hover {
+  box-shadow: 0px 0px 20px #fff, 0px 0px 20px #db435c;
+  background-color: white;
+  color: #9b2338;
+}
+
+.total-div {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 25px;
+  letter-spacing: 0.12em;
+}
+
+.soon-button {
+  margin-top: 9vh;
+  width: 100%;
+  height: 5vh;
+  color: white;
+  background-color: #858282;
+  font-family: "Orbitron", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  transition: ease-in-out all 0.1s;
+}
+
+.soon-button:hover{
+  width: 101%;
+}
+
+
+.reminder-text {
+  margin-top: 2vh;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .main-div {
+    margin-top: -15vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .div-1 {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-1-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    line-height: 4em;
+  }
+
+  .whitelist-text {
+    margin-top: -6.5vh;
+    margin-right: 10vh;
+    font-family: "Valorant";
+    font-size: 35px;
+    text-shadow: 0px 0px 25px rgb(221, 58, 58), 0px 0px 0px #c72842;
+  }
+
+  .sale-text {
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    margin-left: -3vh;
+    margin-top: -5vh;
+  }
+
+  .rabbit-image {
+    margin-left: 19vh;
+    width: 10vh;
+  }
+
+
+
+
+
+  .learn-text {
+    margin-top: 56vh;
+    font-family: "Orbitron", sans-serif;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+  }
+
+  .discord-text {
+    color: #9a2237;
+    transition: ease-in-out all 0.2s;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0), 0px 0px 5px #000000;
+  }
+
+  .discord-text:active {
+    cursor: pointer;
+    color: white;
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #db435c;
+  }
+
+  .margin-div {
+    margin: 0 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-2 {
+    box-shadow: 0px 0px 100000px rgba(255, 30, 30, 0.37), 0px 0px 10px #d81111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -27vh;
+    margin-left: 20vh;
+    width: 40vh;
+    height: 50vh;
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+  }
+
+
+
+  .mint-text {
+    margin-top: 2vh;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #db435c;
+  }
+
+  .count-text {
+    margin-top: 1vh;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-align: center;
+  }
+
+  .balance-div {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.12em;
+  }
+
+  .amount-div {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.12em;
+  }
+
+  .minus-button {
+    margin-top: -1vh;
+  }
+
+  .add-button {
+    margin-top: -1vh;
+  }
+
+  .operators-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vh;
+    font-weight: bold;
+  }
+
+  .max-button {
+    margin-top: -1vh;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 0.12em;
+    font-weight: bold;
+  }
+
+  .total-div {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.12em;
+  }
+
+  .soon-button {
+    margin-top: 2vh;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    background-color: #858282;
+    font-family: "Orbitron", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+  }
+
+  .reminder-text {
+    margin-top: 2vh;
+    font-size: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  .main-div {
+    margin-top: -12vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .div-1 {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-1-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    line-height: 4em;
+  }
+
+  .whitelist-text {
+    margin-top: -6.5vh;
+    margin-right: 10vh;
+    font-family: "Valorant";
+    font-size: 35px;
+    text-shadow: 0px 0px 25px rgb(221, 58, 58), 0px 0px 0px #c72842;
+  }
+
+  .sale-text {
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    margin-left: -3vh;
+    margin-top: -5vh;
+  }
+
+  .rabbit-image {
+    margin-left: 25vh;
+    width: 10vh;
+  }
+
+
+
+
+
+  .learn-text {
+    margin-right: 0vh;
+    margin-top: 65vh;
+    margin-left: 1vh;
+    font-family: "Orbitron", sans-serif;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+  }
+
+  .discord-text {
+    color: #9a2237;
+    transition: ease-in-out all 0.2s;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0), 0px 0px 5px #000000;
+  }
+
+  .discord-text:active {
+    cursor: pointer;
+    color: white;
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #db435c;
+  }
+
+
+
+  .margin-div {
+    margin: 0 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-2 {
+    box-shadow: 0px 0px 100000px rgba(255, 30, 30, 0.37), 0px 0px 10px #d81111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -9vh;
+    margin-left: 20vh;
+    width: 48vh;
+    height: 60vh;
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+  }
+
+  .mint-text {
+    margin-top: 2vh;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #db435c;
+  }
+
+  .count-text {
+    margin-top: 1vh;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-align: center;
+  }
+
+  .balance-div {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.12em;
+  }
+
+  .amount-div {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.12em;
+  }
+
+  .minus-button {
+    margin-top: -1vh;
+  }
+
+  .add-button {
+    margin-top: -1vh;
+  }
+
+  .operators-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vh;
+    font-weight: bold;
+  }
+
+  .max-button {
+    margin-top: -1vh;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 0.12em;
+    font-weight: bold;
+  }
+
+  .total-div {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.12em;
+  }
+
+  .soon-button {
+    margin-top: 2vh;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    background-color: #858282;
+    font-family: "Orbitron", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+  }
+
+  .reminder-text {
+    margin-top: 1vh;
+    font-size: 10px;
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+/* logic */
+

@@ -1,0 +1,59 @@
+<video autoplay="true" loop="true">
+  <source src="../../assets/galaxyBackground.mp4" type="video/mp4" />
+</video>
+
+<div class="main-div">
+  <div class="div-1">
+    <div class="div-1-1">
+      <img src="../../assets/rabbit-head.png" class="rabbit-image" />
+      <p class="whitelist-text">WHITELIST</p>
+      <p class="sale-text">SALE IS NOW LIVE</p>
+    </div>
+
+    <button mat-raised-button *ngIf="platform.ANDROID || platform.IOS" class="connect-button" (click)="onConnect()">CONNECT WALLET</button>
+
+    <p class="learn-text">
+      Learn how to get access in <span class="discord-text">our Discord</span>
+    </p>
+  </div>
+
+  <div class="div-2">
+    <div class="margin-div">
+      <p class="mint-text">MINT NFT</p>
+      <p class="count-text" style="line-height: 1.7em;">
+        <span style="color: #c92a44; font-weight: bolder;"> <span style="font-size: 18px;">{{totalSupply ? totalSupply : "N/A"}} </span></span>minted out of
+        <span style="color: #c92a44; font-weight: bolder; font-size: 18px;">{{maxSupply ? maxSupply : "N/A"}}</span> first generation of Cyber Rabbit NFT.
+        <span  style="color: white; font-size: 14px;">1 Cyber Rabbit = <span style="color: #c92a44; font-weight: bolder; font-size: 15px;">{{cost ? cost : 'N/A'}} ETH</span></span>
+      </p>
+
+      <div class="balance-div">
+        <p>Balance</p>
+        <p class="glow">{{ETHbalance ? ETHbalance : "N/A"}}</p>
+      </div>
+      <hr style="width: 100%; border: 1px solid rgba(104, 104, 104, 0.589);"/>
+      <div class="amount-div">
+        <p>QUANTITY</p>
+
+        <div class="operators-div">
+          <button mat-button class="minus-button" (click)="minus()">-</button>
+          <p class="glow">{{quantity}}</p>
+          <button mat-button  class="add-button" (click)="add()">+</button>
+        </div>
+
+
+        <button mat-raised-button class="max-button">Max</button>
+      </div>
+      <hr style="width: 100%; border: 1px solid rgba(104, 104, 104, 0.589);"/>
+      <div class="total-div">
+        <p>Total</p>
+        <p class="glow">TBA</p>
+      </div>
+
+      <hr style="width: 100%; border: 1px solid rgba(104, 104, 104, 0.589);"/>
+      <button class="soon-button" mat-raised-button>
+        COMING SOON
+      </button>
+      <p class="reminder-text">Make sure your MetaMask wallet is connected.</p>
+    </div>
+  </div>
+</div>

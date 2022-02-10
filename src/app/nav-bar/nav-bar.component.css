@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@font-face {
+  font-family: "Valorant";
+  src: local("Valorant"),
+    url(../../assets/fonts//Valorant.ttf) format("truetype");
+}
+
+mat-sidenav-container{
+  height: 100%;
+  background-color: red;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+mat-sidenav, mat-sidenav-content{
+  padding: 16px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+mat-sidenav {
+  background-color: #290c10c4 !important;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+
+
+
+.main-div {
+  background-color: transparent;
+  top: 0vh;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.main-div * {
+}
+
+.main-div ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.main-div li {
+  margin: 18px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5vh;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+.main-div a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.main-div a:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.main-div a:hover:after {
+  width: 100%;
+}
+
+
+.logo {
+  margin-left: 14vh;
+  margin-top: 6vh;
+  height: 15vh;
+  width: auto;
+}
+
+.connect-container{
+  margin-right: 8vh;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+}
+
+.connect-button {
+  background-color: #9a2237;
+  color: white;
+  font-family: "Valorant";
+
+}
+
+.menu {
+  margin: 35px;
+  color: white;
+  font-size: 30px;
+  border: 1px solid #c03048;
+  border-radius: 5px;
+  padding: 3px;
+  background-image: linear-gradient(#5a0f1b, #9a2237);
+}
+
+.example-container {
+  width: 100%;
+  background-color: transparent;
+  height: 100%;
+  margin-bottom: 3vh;
+
+}
+
+.drawer {
+  background-color: #290c10;
+  width: 100%;
+}
+
+.drawer p {
+  color: white;
+}
+
+.content-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-image {
+  width: 25vw;
+}
+
+.menu-links {
+  margin-top: 10vh;
+}
+
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+.menu-links p {
+  /* background-color: red; */
+  border: 1px solid rgba(139, 139, 139, 0.267);
+  padding: 20px 0px;
+  padding-left: 15vw;
+  margin: 0px 0px;
+}
+
+.menu-links p:active {
+  background-color: #c7516528;
+}
+
+.mobile-menu-icons {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-icon-image {
+  width: 5vh;
+  border: .7px solid transparent;
+  border-image: linear-gradient(90deg, #b35867, #9b2338);
+  border-image-slice: 1;
+  margin: 5px;
+}
+
+.mobile-icon-image:active{
+  background-image: linear-gradient(90deg, #b35867 , #9b2338);
+}
+
+
+.set-hidden {
+  overflow-y: hidden;
+}
+
+.set-free {
+  overflow-y: scroll;
+
+}
+
+.wallet-address{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallet-address{
+  width: 20vh;
+  height: 5vh;
+  background-color: rgb(68, 68, 68);
+  border-radius: 25px;
+  color: white;
+}
+
+.wallet-image{
+  width: 4.5vh;
+  height: auto;
+  margin-right: 0.5vh;
+}
+
+.wallet-text{
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 5vh;
+  font-size: 15px;
+  padding-top: 1.3vh;
+}
+
+/* *{ overflow: hidden !important; } */

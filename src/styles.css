@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+body {
+  border: none !important;
+  margin: 0px !important;
+  padding: 0 !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.snack-bar {
+  background: rgb(34, 34, 34);
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif !important;
+}
+
+.snack-bar span{
+  font-family: "Orbitron", sans-serif !important;
+  letter-spacing: 0.12em;
+  font-weight: bold;
+}
+
+.green-snackbar button {
+  background-color: rgb(65, 252, 134);
+  color: white;
+  border: none;
+}
+.red-snackbar {
+  background: #F44336;
+  color: white;
+}
+.red-snackbar button {
+  background-color: #F44336;
+  color: white !important;
+  border: none;
+}
