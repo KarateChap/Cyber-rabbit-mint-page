@@ -10,7 +10,7 @@
       <p class="sale-text">SALE IS NOW LIVE</p>
     </div>
 
-    <button mat-raised-button *ngIf="platform.ANDROID || platform.IOS" class="connect-button" (click)="onConnect()">CONNECT WALLET</button>
+    <button mat-raised-button *ngIf="platform.ANDROID || platform.IOS" class="connect-button" (click)="onConnect()">{{address ? ((address | slice:0:10)+ '.....') : 'CONNECT WALLET'}}</button>
 
     <p class="learn-text">
       Learn how to get access in <span class="discord-text">our Discord</span>
@@ -41,12 +41,12 @@
         </div>
 
 
-        <button mat-raised-button class="max-button">Max</button>
+        <button mat-raised-button class="max-button" (click)="quantity = 2">Max</button>
       </div>
       <hr style="width: 100%; border: 1px solid rgba(104, 104, 104, 0.589);"/>
       <div class="total-div">
         <p>Total</p>
-        <p class="glow">TBA</p>
+        <p class="glow">{{ETHbalance ? (+quantity * +cost) : 'TBA'}}</p>
       </div>
 
       <hr style="width: 100%; border: 1px solid rgba(104, 104, 104, 0.589);"/>

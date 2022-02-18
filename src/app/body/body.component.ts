@@ -18,6 +18,7 @@ export class BodyComponent implements OnInit {
   ) {}
   quantity = 1;
   cost;
+  total;
   maxSupply;
   totalSupply;
 
@@ -40,7 +41,7 @@ export class BodyComponent implements OnInit {
     this.contractService.addressChanged.subscribe((address) => {
       this.address = address;
       this.contractService.getEthBalance(this.address).then((balance) => {
-        this.ETHbalance = (+balance / 1000000000000000000).toString();
+        this.ETHbalance = (+balance / 1000000000000000000).toFixed(2).toString();
         console.log(this.ETHbalance)
       });
     });
